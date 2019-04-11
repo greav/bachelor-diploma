@@ -1,0 +1,60 @@
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb,cite,url,verbatim,graphicx,wrapfig}
+\graphicspath{{images/}}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{relsize}
+\usepackage{algorithm2e}
+
+
+% Поля: верхнее – 2 см, нижнее – 2 см, левое – 3 см, правое – 1.5 см.
+\usepackage{geometry}
+\geometry{
+	left = 3cm,
+	top = 2cm,
+	right = 1.5cm,
+	bottom = 2cm
+}
+
+
+%\setlength{\parindent}{1.5cm}
+
+% Кегль: основной текст – 14 пт, названия параграфов – 16 пт, названия глав – 18 пт, текст в таблице, подписи к рисункам, таблицам – 12 пт.
+\renewcommand{\small}{\fontsize{12}{12}\selectfont}
+\renewcommand{\normalsize}{\fontsize{14}{14}\selectfont}
+\renewcommand{\large}{\fontsize{16}{16}\selectfont}
+\renewcommand{\Large}{\fontsize{18}{18}\selectfont}
+\renewcommand{\huge}{\fontsize{20}{20}\selectfont}
+\usepackage{sectsty}
+\sectionfont{\Large}
+\subsectionfont{\large}
+\paragraphfont{\normalsize}
+\usepackage[font=small]{caption}
+
+% Межстрочный интервал: 1.5 строки.
+\usepackage{setspace}
+\linespread{1.5}
+
+% Абзацный отступ. Первая строка каждого абзаца должна иметь абзацный отступ 1.25 см.
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% Выравнивание основного текста по ширине поля.
+\usepackage{ragged2e}
+\justifying
+
+%%% здесь лучше ничего не трогать
+\setcounter{tocdepth}{2}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\allsectionsfont{\centering}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\usepackage{tocloft}
+\cftsetindents{section}{0em}{0em}
+\cftsetindents{subsection}{2em}{0em}
+\AtBeginDocument{\renewcommand{\contentsname}{\begin{center} \vskip-2.5cm \Large{Содержание} \end{center}}}
+\AtBeginDocument{\renewcommand{\bibname}{}}
+%%%
