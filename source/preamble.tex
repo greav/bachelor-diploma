@@ -32,6 +32,7 @@
 \subsectionfont{\large}
 \paragraphfont{\normalsize}
 \usepackage[font=small]{caption}
+\usepackage{subcaption}
 
 % Межстрочный интервал: 1.5 строки.
 \usepackage{setspace}
@@ -44,6 +45,8 @@
 % Выравнивание основного текста по ширине поля.
 \usepackage{ragged2e}
 \justifying
+
+\renewcommand\thesubfigure{\asbuk{subfigure}} %подписываем подграфики кириллицей
 
 %%% здесь лучше ничего не трогать
 \setcounter{tocdepth}{2}
